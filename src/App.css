@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Lilita One';
+  src: url(./assets/fonts/LilitaOne-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'Lobster Two';
+  src: url(./assets/fonts/LobsterTwo-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url(./assets/fonts/DMSans-VariableFont_opsz\,wght.woff2);
+}
+
+body {
+  font-family: 'Lilita One', cursive;
+}
+
+option {
+  color: black;
+}
+
+.starry-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.star-white {
+  position: absolute;
+  background: #e9a6a6;
+  width: 3px;
+  height: 3px;
+  animation: blink 1s linear infinite, move 20s linear infinite;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+.star-black {
+  position: absolute;
+  background: #0284c7;
+  width: 3px;
+  height: 3px;
+  animation: blink 1s linear infinite, move 20s linear infinite;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
