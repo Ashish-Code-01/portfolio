@@ -60,7 +60,7 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://github.com/Code-With-Aashish" target="blank">
+          <Link href="https://github.com/Ashish-Code-01" target="blank">
             <AiFillGithub />
           </Link>
         </ListItem>

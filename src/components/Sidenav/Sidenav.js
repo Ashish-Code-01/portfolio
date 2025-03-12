@@ -15,7 +15,6 @@ import {
 } from "@chakra-ui/react";
 import { React, useState, useRef } from "react";
 import { IoMenuOutline } from "react-icons/io5";
-import GitHubButton from "react-github-btn";
 import Content from "./Content";
 import sidenavDark from "../../assets/sidenavDark.png";
 import sidenavLight from "../../assets/sidenavLight.png";
@@ -189,25 +188,6 @@ export function SideNavResponsive(props) {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  {/* <GitHubButton
-                    href="https://github.com/Rahul1582/portfolio-rahulkp"
-                    data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-                    data-icon="octicon-star"
-                    data-size="large"
-                    aria-label="Star Rahul1582/portfolio-rahulkp on GitHub"
-                  >
-                    Star
-                  </GitHubButton> */}
-
-                  {/* <GitHubButton
-                    href="https://github.com/Rahul1582/portfolio-rahulkp/fork"
-                    data-color-scheme="no-preference: light; light: light; dark: dark_dimmed;"
-                    data-icon="octicon-repo-forked"
-                    data-size="large"
-                    aria-label="Fork Rahul1582/portfolio-rahulkp on GitHub"
-                  >
-                    Fork
-                  </GitHubButton> */}
                 </Flex>
               </Flex>
             </Box>

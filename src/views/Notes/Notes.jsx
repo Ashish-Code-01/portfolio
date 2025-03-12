@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
     Box,
     SimpleGrid,
@@ -13,7 +13,6 @@ import HtmlIMG from "../../assets/notes/HTML.png";
 import JavaScript from "../../assets/notes/JS.png";
 import MongoDB from "../../assets/notes/mongoDB.png";
 import Nodejs from "../../assets/notes/nodeJS.png";
-
 import CPlusPlusNotes from "../../assets/pdf/CPlusPlus.pdf"
 import ReactJSNotes from "../../assets/pdf/ReactJS.pdf"
 import CSSNotes from "../../assets/pdf/CSS.pdf"

@@ -68,11 +68,6 @@ export default function About() {
           alignItems="center"
           mb="40px"
         >
-          {/* <TypeAnimation
-            sequence={["ABOUT ME", 500, "ABOUT", 500, "ABOUT ME", 500]}
-            style={{ fontSize: "3em" }}
-            cursor={false}
-          /> */}
           <Grid
             templateColumns={{
               base: "1fr",
@@ -100,23 +95,38 @@ export default function About() {
                 height="100%"
                 bg={textColorPrimary}
                 transform="rotate(4deg)"
-              // zIndex="-1"
+              zIndex="-1"
               />
               <Skeleton
                 height="100%"
+                width="100%"
                 isLoaded={loadedProfileimg}
                 color="white"
                 fadeDuration={1}
               >
-                <LazyLoadImage
-                  src={myphoto}
+                <Box
                   width="100%"
                   height="100%"
-                  alt="Image Alt"
-                  effect="blur"
-                  style={{ height: "100%" }}
-                  onLoad={() => setloadedProfileimg(true)}
-                />
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  overflow="hidden"
+                >
+                  <LazyLoadImage
+                    src={myphoto}
+                    width="100%"
+                    height="100%"
+                    alt="Ashish Vishwakarma profile photo"
+                    effect="blur"
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "100%",
+                      display: "block"
+                    }}
+                    onLoad={() => setloadedProfileimg(true)}
+                  />
+                </Box>
               </Skeleton>
             </Box>
             <Flex
@@ -212,7 +222,7 @@ export default function About() {
         </Flex>
         <Box display="flex" justifyContent="center" alignItems="center">
           <GitHubCalendar
-            username="Code-With-Aashish"
+            username="Ashish-code-01"
             colorScheme={colorMode === "light" ? "light" : "dark"}
             year="last"
           />
@@ -227,8 +237,8 @@ export default function About() {
             <LazyLoadImage
               src={
                 colorMode === "light"
-                  ? "#"
-                  : "#"
+                  ? `https://github-readme-streak-stats.herokuapp.com/?user=Ashish-code-01&theme=light&hide_border=false`
+                  : `https://github-readme-streak-stats.herokuapp.com/?user=Ashish-code-01&theme=dark&hide_border=false`
               }
               alt="GitHub Streak"
               effect="blur"
@@ -237,7 +247,7 @@ export default function About() {
           </Skeleton>
         </Flex>
         <Flex justifyContent="center" alignItems="center" mt="20px">
-          <Link href="https://github.com/Code-With-Aashish" target="blank">
+          <Link href="https://github.com/Ashish-code-01" target="blank">
             <Button variant="darkBrand" fontSize="sm" fontFamily="DM Sans">
               Visit Github
             </Button>

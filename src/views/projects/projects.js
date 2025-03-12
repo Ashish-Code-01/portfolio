@@ -2,9 +2,7 @@ import { React, useEffect } from "react";
 import {
   Box,
   SimpleGrid,
-  Flex,
-  Text,
-  useColorModeValue
+  Flex
 } from "@chakra-ui/react";
 import routes from "../../routes";
 import Navbar from "../../components/Navbar/Navbar";
@@ -18,11 +16,6 @@ import mtrans from "../../assets/projects/mt_500x300.jpg";
 // import steg from "../../assets/projects/steg_500x300.jpeg";
 
 export default function Projects() {
-  const textColorPrimary = useColorModeValue(
-    "secondaryGray.900",
-    "lightpeach.100"
-  );
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
@@ -49,7 +42,7 @@ export default function Projects() {
           columns={{ base: 1, md: 3 }}
           gap="25px"
           alignItems="center"
-          justifyContent="center" 
+          justifyContent="center"
         >
           <ProjectCard
             projectImage={nftproject}
