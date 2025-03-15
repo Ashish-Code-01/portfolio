@@ -19,7 +19,7 @@ export default function Resume() {
   };
 
   const handleDownload = () => {
-    window.location.href = "https://drive.google.com/uc?export=download&id=10ERNUGGryMA4m3vGsSzPX3DbjOYHIt6b";
+    window.location.href = "https://drive.google.com/file/d/1UODk9dGGUADWZX_Z3XzBNl8rr_I1bo-X";
   };
 
   return (
@@ -35,7 +35,7 @@ export default function Resume() {
             borderRadius="md"
           >
             <iframe
-              src="https://drive.google.com/file/d/10ERNUGGryMA4m3vGsSzPX3DbjOYHIt6b/preview"
+              src="https://drive.google.com/file/d/1UODk9dGGUADWZX_Z3XzBNl8rr_I1bo-X/preview"
               title="Resume"
               width="100%"
               height="100%"
